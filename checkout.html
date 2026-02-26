@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handloom Global | Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+        <div>
+          <div class="brand-text-main">Handloom</div>
+          <div class="brand-text-sub">Cash on Delivery Checkout</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="buyer-dashboard.html">Back to Products</a>
+        <a class="nav-link" href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <section class="page-heading-block">
+      <div class="page-eyebrow">Order summary</div>
+      <h1 class="page-title">Review &amp; confirm</h1>
+      <p class="page-subtitle">
+        We use a simple cash‑on‑delivery flow. No card or UPI details needed.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2 class="section-title">Items in your order</h2>
+        <p class="section-sub">Loaded from your cart.</p>
+      </div>
+
+      <div id="checkout-empty" class="text-muted">
+        Your cart is empty. Go back to the buyer page and add a few handloom pieces first.
+      </div>
+
+      <div id="checkout-items" class="cart-items"></div>
+
+      <div id="checkout-summary" class="cart-summary hidden">
+        <div class="cart-summary-row">
+          <span>Order total</span>
+          <span id="checkout-total"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16 card" id="cod-section">
+      <div class="section-header">
+        <h2 class="section-title">Cash on delivery details</h2>
+        <p class="section-sub">We only need your delivery address and contact.</p>
+      </div>
+
+      <form id="cod-form">
+        <div class="form-group">
+          <label class="form-label" for="cod-name">Full name</label>
+          <input id="cod-name" class="form-input" placeholder="Ananya Sharma" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cod-address">Delivery address</label>
+          <textarea id="cod-address" class="form-input" rows="3"
+            placeholder="House / Street, City, State, PIN code" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cod-phone">Contact number</label>
+          <input id="cod-phone" class="form-input" placeholder="+91‑98765‑43210" required />
+        </div>
+
+        <p class="text-muted">
+          Payment method: <strong>Cash on Delivery</strong>. You will pay when the order arrives at your doorstep.
+        </p>
+
+        <button type="submit" class="btn btn-wide mt-16">Place order (COD)</button>
+      </form>
+
+      <div id="cod-success" class="mt-16 align-center text-muted hidden">
+        <h3 class="section-title">Order placed successfully!</h3>
+        <p>Your handloom treasures are on their way. We&apos;ve saved this as a cash‑on‑delivery order.</p>
+        <p>
+          You can continue browsing from the
+          <a href="buyer-dashboard.html" class="link-muted">buyer dashboard</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+

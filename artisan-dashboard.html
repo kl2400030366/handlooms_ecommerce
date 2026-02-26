@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handloom Global | Artisan Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+        <div>
+          <div class="brand-text-main">Handloom</div>
+          <div class="brand-text-sub">Artisan Workspace</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="buyer-dashboard.html">Buyer View</a>
+        <a class="nav-link" href="marketing-dashboard.html">Marketing</a>
+        <a class="nav-link nav-link--primary" href="login.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="page-heading-block">
+      <div class="page-eyebrow">Artisan dashboard</div>
+      <h1 class="page-title">Welcome, Ananya!</h1>
+      <p class="page-subtitle">
+        Manage your handloom catalogue, inventory, and buyer conversations.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="stats-row">
+        <div class="stat-pill">
+          <div class="stat-label">Products listed</div>
+          <div class="stat-value">28</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-label">Orders received</div>
+          <div class="stat-value">12</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-label">Inventory stock</div>
+          <div class="stat-value">45</div>
+        </div>
+      </div>
+
+      <div class="flex-row mt-16">
+        <button class="btn">Add New Product</button>
+        <button class="btn btn-teal">Manage Inventory</button>
+        <button class="btn btn-olive">Messages</button>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="section-header">
+        <h2 class="section-title">My Products</h2>
+        <p class="section-sub">Preview and edit your live catalogue.</p>
+      </div>
+
+      <div class="grid-3" id="artisan-product-grid">
+        <article class="product-grid-card" data-artisan-id="artisan-saree">
+          <img src="assets/product-saree.jpg" alt="Silk Saree" />
+          <div class="product-meta">
+            <h3 class="product-title">Silk Saree</h3>
+            <p class="product-price">$80</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost" data-artisan-action="edit">Edit</button>
+              <button class="btn btn-teal" data-artisan-action="view">View</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-artisan-id="artisan-shawl">
+          <img src="assets/product-shawl.jpg" alt="Handwoven Shawl" />
+          <div class="product-meta">
+            <h3 class="product-title">Handwoven Shawl</h3>
+            <p class="product-price">$80</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost" data-artisan-action="edit">Edit</button>
+              <button class="btn btn-teal" data-artisan-action="view">View</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-artisan-id="artisan-scarf">
+          <img src="assets/product-bag.jpg" alt="Cotton Scarf" />
+          <div class="product-meta">
+            <h3 class="product-title">Cotton Scarf</h3>
+            <p class="product-price">$30</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost" data-artisan-action="edit">Edit</button>
+              <button class="btn btn-teal" data-artisan-action="view">View</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-16 card hidden" id="artisan-editor">
+      <div class="section-header">
+        <h2 class="section-title" id="artisan-editor-title">Edit product</h2>
+        <p class="section-sub">Update details and they will refresh in &quot;My Products&quot; above (front‑end only prototype).</p>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <img id="artisan-editor-image" src="" alt="Product preview" />
+        </div>
+        <form id="artisan-editor-form">
+          <input type="hidden" id="artisan-editor-id" />
+          <div class="form-group">
+            <label class="form-label" for="artisan-name">Product name</label>
+            <input id="artisan-name" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="artisan-price">Price (USD)</label>
+            <input id="artisan-price" class="form-input" type="number" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="artisan-stock">Stock quantity</label>
+            <input id="artisan-stock" class="form-input" type="number" min="0" step="1" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="artisan-description">Short description</label>
+            <textarea id="artisan-description" class="form-input" rows="3"
+              placeholder="Handwoven on traditional looms..."></textarea>
+          </div>
+
+          <div class="flex-row mt-16">
+            <button type="submit" class="btn btn-teal">Save changes</button>
+            <button type="button" class="btn btn-ghost" id="artisan-editor-cancel">Close</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+

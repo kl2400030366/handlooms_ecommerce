@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handloom Global | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+        <div>
+          <div class="brand-text-main">Handloom</div>
+          <div class="brand-text-sub">Discover the Art of Handloom Fashion</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="buyer-dashboard.html">Browse</a>
+        <a class="nav-link" href="artisan-dashboard.html">For Artisans</a>
+      </nav>
+    </header>
+
+    <section class="page-heading-block">
+      <div class="page-eyebrow">Welcome back</div>
+      <h1 class="page-title">Login to your account</h1>
+      <p class="page-subtitle">
+        Secure access for Admins, Artisans, Buyers, and Marketing Specialists.
+      </p>
+    </section>
+
+    <section class="login-layout">
+      <aside class="login-visual">
+        <div class="login-visual-tagline">
+          Discover the art of handloom fashion &mdash; woven stories from artisans worldwide.
+        </div>
+      </aside>
+
+      <div class="login-panel">
+        <div class="form-card">
+          <h2 class="form-title">Login to Your Account</h2>
+          <p class="form-subtitle">Choose your role and continue.</p>
+
+          <!-- Default action sends buyers to their dashboard; JS enhances this for other roles -->
+          <form id="login-form" action="buyer-dashboard.html" method="get">
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" class="form-input" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" type="password" class="form-input" placeholder="••••••••" required />
+            </div>
+
+            <div class="form-group">
+              <label for="role" class="form-label">Login as</label>
+              <select id="role" class="form-input">
+                <option value="buyer" selected>Buyer</option>
+                <option value="artisan">Artisan</option>
+                <option value="marketing">Marketing Specialist</option>
+                <option value="admin">Admin</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-wide">Login</button>
+
+            <div class="form-footer-row">
+              <a href="#" class="link-muted">Forgot Password?</a>
+              <a href="signup.html" class="link-muted">New here? Sign Up</a>
+            </div>
+
+            <div class="align-center mt-16 text-muted">Or continue with</div>
+            <div class="oauth-row">
+              <button type="button" class="oauth-btn">
+                <span>Facebook</span>
+              </button>
+              <button type="button" class="oauth-btn">
+                <span>Google</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+

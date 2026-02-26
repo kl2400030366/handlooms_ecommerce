@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handloom Global | Marketing Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+        <div>
+          <div class="brand-text-main">Handloom</div>
+          <div class="brand-text-sub">Marketing Dashboard</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="buyer-dashboard.html">Buyer</a>
+        <a class="nav-link" href="artisan-dashboard.html">Artisan</a>
+        <a class="nav-link nav-link--primary" href="login.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="page-heading-block">
+      <div class="page-eyebrow">Marketing insights</div>
+      <h1 class="page-title">Marketing Dashboard</h1>
+      <p class="page-subtitle">
+        Track campaigns, social media engagement, and promotional banners for your handloom collections.
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <section class="card">
+        <div class="section-header">
+          <h2 class="section-title">Campaign Overview</h2>
+          <p class="section-sub">Snapshot of active handloom promotions.</p>
+        </div>
+        <div class="stats-row">
+          <div class="stat-pill">
+            <div class="stat-label">Active campaigns</div>
+            <div class="stat-value">5</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-label">Ads reach</div>
+            <div class="stat-value">120k</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-label">Global engagement</div>
+            <div class="stat-value">15k</div>
+          </div>
+        </div>
+        <div class="mt-16">
+          <div class="section-header">
+            <h3 class="section-title">Campaign performance</h3>
+            <p class="section-sub">Monthly trend (static mock chart).</p>
+          </div>
+          <div class="chart-placeholder">
+            <div class="chart-line">
+              <div class="chart-point"></div>
+              <div class="chart-point"></div>
+              <div class="chart-point"></div>
+              <div class="chart-point"></div>
+              <div class="chart-point"></div>
+              <div class="chart-point"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2 class="section-title">Social media insights</h2>
+          <p class="section-sub">Understand audience growth and top posts.</p>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-label">Followers</div>
+          <div class="stat-value">35k</div>
+        </div>
+        <div class="mt-16">
+          <h3 class="section-title">Top post</h3>
+          <div class="top-post-card mt-16">
+            <div class="top-post-banner">
+              <div class="top-post-note">Handloom festival sale</div>
+              <h4 class="top-post-title">Up to 40% off</h4>
+              <p class="top-post-sub">Curated festival edit of sarees, shawls, and eco‑friendly bags.</p>
+              <a href="buyer-dashboard.html" class="btn btn-wide">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="mt-16">
+      <div class="section-header">
+        <h2 class="section-title">Promotional banners</h2>
+        <p class="section-sub">Visual assets for homepage placements.</p>
+      </div>
+      <div class="grid-3" id="marketing-banners">
+        <article class="product-grid-card" data-banner-id="collection">
+          <img src="assets/banner-collection.jpg" alt="New collection banner" />
+          <div class="product-meta">
+            <h3 class="product-title">New Collection Launch</h3>
+            <button class="btn btn-wide btn-ghost" data-banner-action="use">Use Banner</button>
+          </div>
+        </article>
+        <article class="product-grid-card" data-banner-id="explore">
+          <img src="assets/banner-explore.jpg" alt="Explore banner" />
+          <div class="product-meta">
+            <h3 class="product-title">Explore Now</h3>
+            <button class="btn btn-wide btn-ghost" data-banner-action="use">Use Banner</button>
+          </div>
+        </article>
+        <article class="product-grid-card" data-banner-id="sale">
+          <img src="assets/banner-sale.jpg" alt="Festival sale" />
+          <div class="product-meta">
+            <h3 class="product-title">Festival Sale</h3>
+            <button class="btn btn-wide btn-ghost" data-banner-action="use">Use Banner</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-16 card-soft" id="marketing-current-banner">
+        <div class="section-header">
+          <h3 class="section-title">Current homepage banner</h3>
+          <p class="section-sub">Updated when you click &quot;Use Banner&quot; above.</p>
+        </div>
+        <p class="text-muted" id="marketing-current-banner-text">
+          No banner selected yet. Choose one of the promotional banners above to apply it to the homepage hero
+          (prototype behaviour).
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+

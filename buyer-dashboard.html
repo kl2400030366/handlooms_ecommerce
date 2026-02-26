@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handloom Global | Buyer Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+        <div>
+          <div class="brand-text-main">Handloom</div>
+          <div class="brand-text-sub">Explore Handloom Treasures</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="artisan-dashboard.html">Artisan View</a>
+        <a class="nav-link" href="marketing-dashboard.html">Marketing</a>
+        <a class="nav-link" href="#cart-panel">Cart <span id="cart-count" class="cart-count">0</span></a>
+        <a class="nav-link nav-link--primary" href="login.html">Account</a>
+      </nav>
+    </header>
+
+    <section class="page-heading-block">
+      <div class="page-eyebrow">Buyer workspace</div>
+      <h1 class="page-title">Explore Handloom Treasures</h1>
+      <p class="page-subtitle">
+        Curated collections of sarees, shawls, and eco‑friendly accessories from verified artisans.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2 class="section-title">Recommended for you</h2>
+        <p class="section-sub">Based on trending crafts and your favourites.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="product-grid-card" data-product-id="saree-banarasi" data-product-name="Banarasi Silk Saree"
+          data-product-price="120">
+          <img src="assets/product-saree.jpg" alt="Silk Saree" />
+          <div class="product-meta">
+            <h3 class="product-title">Banarasi Silk Saree</h3>
+            <p class="product-price">$120</p>
+            <div class="product-actions">
+              <button class="btn btn-teal" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-product-id="shawl-handwoven" data-product-name="Handwoven Shawl"
+          data-product-price="80">
+          <img src="assets/product-shawl.jpg" alt="Handwoven Shawl" />
+          <div class="product-meta">
+            <h3 class="product-title">Handwoven Shawl</h3>
+            <p class="product-price">$80</p>
+            <div class="product-actions">
+              <button class="btn" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-product-id="bag-eco" data-product-name="Eco‑Friendly Handloom Bag"
+          data-product-price="45">
+          <img src="assets/product-bag.jpg" alt="Eco‑friendly bag" />
+          <div class="product-meta">
+            <h3 class="product-title">Eco‑Friendly Handloom Bag</h3>
+            <p class="product-price">$45</p>
+            <div class="product-actions">
+              <button class="btn btn-olive" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-16 card">
+      <div class="section-header">
+        <h2 class="section-title">More handloom delights</h2>
+        <p class="section-sub">Explore additional sarees, scarves, and eco‑friendly pieces.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="product-grid-card" data-product-id="saree-tussar" data-product-name="Tussar Silk Saree"
+          data-product-price="95">
+          <img src="assets/product-saree-soft.jpg" alt="Tussar Silk Saree" />
+          <div class="product-meta">
+            <h3 class="product-title">Tussar Silk Saree</h3>
+            <p class="product-price">$95</p>
+            <div class="product-actions">
+              <button class="btn btn-teal" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-product-id="scarf-cotton" data-product-name="Handloom Cotton Scarf"
+          data-product-price="35">
+          <img src="assets/product-scarf.jpg" alt="Handloom Cotton Scarf" />
+          <div class="product-meta">
+            <h3 class="product-title">Handloom Cotton Scarf</h3>
+            <p class="product-price">$35</p>
+            <div class="product-actions">
+              <button class="btn" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-grid-card" data-product-id="bag-tote" data-product-name="Eco Tote Bag"
+          data-product-price="40">
+          <img src="assets/product-eco-tote.jpg" alt="Eco Tote Bag" />
+          <div class="product-meta">
+            <h3 class="product-title">Eco‑Friendly Tote Bag</h3>
+            <p class="product-price">$40</p>
+            <div class="product-actions">
+              <button class="btn btn-olive" data-action="buy-now">Buy Now</button>
+              <button class="btn btn-ghost" data-action="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-16 grid-2">
+      <div class="card">
+        <div class="section-header">
+          <h2 class="section-title">Your orders</h2>
+          <p class="section-sub">Track recent handloom purchases.</p>
+        </div>
+        <div class="stats-row">
+          <div class="stat-pill">
+            <div class="stat-label">Orders placed</div>
+            <div class="stat-value">12</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-label">In transit</div>
+            <div class="stat-value">3</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-label">Delivered</div>
+            <div class="stat-value">9</div>
+          </div>
+        </div>
+        <p class="text-muted">
+          This is a static prototype. Hook this table to your backend orders API.
+        </p>
+      </div>
+
+      <div class="card card-soft">
+        <div class="section-header">
+          <h2 class="section-title">Saved collections</h2>
+          <p class="section-sub">Your favourite artisans and products.</p>
+        </div>
+        <p class="text-muted">
+          Use this area to surface favourite weaves, artisans, or curated lookbooks for buyers.
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-16 card" id="cart-panel">
+      <div class="section-header">
+        <h2 class="section-title">Your cart</h2>
+        <p class="section-sub">Items you are ready to buy.</p>
+      </div>
+
+      <div id="cart-empty" class="text-muted">Your cart is empty. Browse the products above and add something
+        beautiful.</div>
+
+      <div id="cart-items" class="cart-items"></div>
+
+      <div id="cart-summary" class="cart-summary hidden">
+        <div class="cart-summary-row">
+          <span>Total</span>
+          <span id="cart-total"></span>
+        </div>
+        <a href="checkout.html" class="btn btn-wide mt-16">Proceed to checkout</a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
